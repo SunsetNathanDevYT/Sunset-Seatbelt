@@ -1,0 +1,27 @@
+#seatbelt {
+    position: absolute;
+    top: 82%; /* Adjusted for minimap alignment */
+    left: 16%;   /* Positioned next to the minimap */
+    width: 80px;   /* Set small size */
+    height: 80px;  /* Set small size */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#seatbelt img {
+    width: 80%; /* Ensure image scales to container */
+    height: 80%;
+    object-fit: contain;
+}
+
+.hidden {
+    display: none;
+}
+
+.flashing {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
